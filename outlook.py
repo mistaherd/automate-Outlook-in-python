@@ -15,8 +15,9 @@ try:
     print("win32com is already installed.")
 except ImportError:
     print("win32com is not installed. Installing...")
-    install_package('pywin32')
+    install_package('pywin32')  # You need to define the 'install_package' function
     print("win32com has been installed.")
+    import win32com.client
 
 
 class OutlookWindow:
